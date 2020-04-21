@@ -1,5 +1,4 @@
 sudo apt-get install update
-sudo apt-get install vim
 sudo apt-get install \
 	apt-transport-https \
 	ca-certificates \
