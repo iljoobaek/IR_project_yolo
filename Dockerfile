@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-mark hold libcudnn7 && \
     rm -rf /var/lib/apt/lists/*
 ENV HOME /home
-ENV REPOSITORY_PATH $HOME/object-detection
+ENV REPOSITORY_PATH $HOME/IR_project
 ENV DARKNET_PATH $REPOSITORY_PATH/darknet
-RUN cd $HOME && git clone https://github.com/paek1ju/IR_project.git $REPOSITORY_PATH &&  \
+RUN cd $HOME && git clone https://github.com/enesozi/object-detection $REPOSITORY_PATH &&  \
     cd $REPOSITORY_PATH && git submodule update --init && cp Makefile $DARKNET_PATH    &&  \
     cd $DARKNET_PATH  && make
