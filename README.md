@@ -15,5 +15,5 @@ Steps to train the model:
 2. Download the pre trained YOLOv3 weights and put them in a new "backup" folder in the working directory (IR_project).
 3. Run build_start_docker.sh to build and start the docker container.
 4. Now run copy_files.sh (outside of the docker) to copy required files ovr to docker.
-5. Once the files are copied, execute ./update_docker.sh to update the docker and process the train data.
+5. Once the files are copied, execute ./update_docker.sh (inside the docker container) to update the docker and process the train data.
 6. Now run ./start_training.sh to start training the model.
